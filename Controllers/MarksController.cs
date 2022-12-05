@@ -50,7 +50,7 @@ namespace GP_Project.Controllers
             _context.SaveChanges();
             return Ok(mark);
         }
-        [HttpDelete("{id}")]
+        [HttpDelete("{id}")] 
         public async Task<IActionResult> DeleteAsync(int id)
         {
             var mark = await _context.marks.FindAsync(id);
